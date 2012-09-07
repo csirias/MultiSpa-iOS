@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630372BD15C03B7C00F27433 /* STComboText.m in Sources */ = {isa = PBXBuildFile; fileRef = 630372B915C03B7C00F27433 /* STComboText.m */; };
+		630372BE15C03B7C00F27433 /* STDateText.m in Sources */ = {isa = PBXBuildFile; fileRef = 630372BC15C03B7C00F27433 /* STDateText.m */; };
+		630372C215C03C5300F27433 /* ClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630372C115C03C5300F27433 /* ClassesViewController.m */; };
+		630372C915C066CD00F27433 /* EasyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630372C815C066CC00F27433 /* EasyTableView.m */; };
+		630372D615C0B1C100F27433 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = 630372D515C0B1C100F27433 /* Classes.m */; };
+		63605A9D15CAF11100999009 /* logoApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 63605A9C15CAF11100999009 /* logoApp.png */; };
+		637FAF1215D0188D001FCF01 /* MaquinasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FAF1115D0188D001FCF01 /* MaquinasViewController.m */; };
+		637FAF1515D02257001FCF01 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 637FAF1415D02257001FCF01 /* calendar.png */; };
+		637FAF1715D022DD001FCF01 /* timthumb.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 637FAF1615D022DD001FCF01 /* timthumb.jpeg */; };
+		637FAF1915D02336001FCF01 /* machines.png in Resources */ = {isa = PBXBuildFile; fileRef = 637FAF1815D02336001FCF01 /* machines.png */; };
+		637FAF2015D032ED001FCF01 /* PickGymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FAF1F15D032ED001FCF01 /* PickGymViewController.m */; };
+		637FAF2715D056D9001FCF01 /* Machine.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FAF2615D056D9001FCF01 /* Machine.m */; };
+		6386F56715BF520300292CCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F56615BF520300292CCF /* UIKit.framework */; };
+		6386F56915BF520300292CCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F56815BF520300292CCF /* Foundation.framework */; };
+		6386F56B15BF520300292CCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F56A15BF520300292CCF /* CoreGraphics.framework */; };
+		6386F57115BF520300292CCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6386F56F15BF520300292CCF /* InfoPlist.strings */; };
+		6386F57315BF520300292CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6386F57215BF520300292CCF /* main.m */; };
+		6386F57715BF520300292CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6386F57615BF520300292CCF /* AppDelegate.m */; };
+		6386F57A15BF520300292CCF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6386F57815BF520300292CCF /* MainStoryboard_iPhone.storyboard */; };
+		6386F57D15BF520300292CCF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6386F57B15BF520300292CCF /* MainStoryboard_iPad.storyboard */; };
+		6386F58815BF520300292CCF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F58715BF520300292CCF /* SenTestingKit.framework */; };
+		6386F58915BF520300292CCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F56615BF520300292CCF /* UIKit.framework */; };
+		6386F58A15BF520300292CCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386F56815BF520300292CCF /* Foundation.framework */; };
+		6386F59215BF520300292CCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6386F59015BF520300292CCF /* InfoPlist.strings */; };
+		6386F59515BF520300292CCF /* MultiSpaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6386F59415BF520300292CCF /* MultiSpaTests.m */; };
+		63C5B04015CB1ABD0003489D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C5B03F15CB1ABD0003489D /* Default.png */; };
+		63FACF9A15C9718500039DC0 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9215C9718500039DC0 /* blue.png */; };
+		63FACF9B15C9718500039DC0 /* cardio.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9315C9718500039DC0 /* cardio.png */; };
+		63FACF9C15C9718500039DC0 /* dancing.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9415C9718500039DC0 /* dancing.png */; };
+		63FACF9D15C9718500039DC0 /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9515C9718500039DC0 /* running.png */; };
+		63FACF9E15C9718500039DC0 /* spinning.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9615C9718500039DC0 /* spinning.png */; };
+		63FACF9F15C9718500039DC0 /* triaplon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9715C9718500039DC0 /* triaplon.png */; };
+		63FACFA015C9718500039DC0 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9815C9718500039DC0 /* yellow.png */; };
+		63FACFA115C9718500039DC0 /* yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9915C9718500039DC0 /* yoga.png */; };
+		63FACFA815C981A100039DC0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACFA715C981A100039DC0 /* logo.png */; };
+		63FACFAA15C9B9D200039DC0 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACFA915C9B9D200039DC0 /* top.png */; };
+		63FACFAC15C9BCA700039DC0 /* bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACFAB15C9BCA700039DC0 /* bottom.png */; };
+		63FACFB015C9C4B800039DC0 /* MultiSpa.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 63FACFAF15C9C4B700039DC0 /* MultiSpa.sqlite */; };
+		63FACFB215C9C4CC00039DC0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */; };
+		63FACFB515C9C56400039DC0 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FACFB415C9C56400039DC0 /* DatabaseManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6386F58B15BF520300292CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6386F55915BF520300292CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6386F56115BF520300292CCF;
+			remoteInfo = MultiSpa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630372B815C03B7C00F27433 /* STComboText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STComboText.h; sourceTree = "<group>"; };
+		630372B915C03B7C00F27433 /* STComboText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STComboText.m; sourceTree = "<group>"; };
+		630372BA15C03B7C00F27433 /* STControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STControls.h; sourceTree = "<group>"; };
+		630372BB15C03B7C00F27433 /* STDateText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDateText.h; sourceTree = "<group>"; };
+		630372BC15C03B7C00F27433 /* STDateText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDateText.m; sourceTree = "<group>"; };
+		630372C015C03C5300F27433 /* ClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesViewController.h; sourceTree = "<group>"; };
+		630372C115C03C5300F27433 /* ClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesViewController.m; sourceTree = "<group>"; };
+		630372C715C066CC00F27433 /* EasyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTableView.h; sourceTree = "<group>"; };
+		630372C815C066CC00F27433 /* EasyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTableView.m; sourceTree = "<group>"; };
+		630372D415C0B1C100F27433 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		630372D515C0B1C100F27433 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		63605A9C15CAF11100999009 /* logoApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoApp.png; sourceTree = "<group>"; };
+		637FAF1015D0188D001FCF01 /* MaquinasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaquinasViewController.h; sourceTree = "<group>"; };
+		637FAF1115D0188D001FCF01 /* MaquinasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaquinasViewController.m; sourceTree = "<group>"; };
+		637FAF1415D02257001FCF01 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		637FAF1615D022DD001FCF01 /* timthumb.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timthumb.jpeg; sourceTree = "<group>"; };
+		637FAF1815D02336001FCF01 /* machines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = machines.png; sourceTree = "<group>"; };
+		637FAF1E15D032ED001FCF01 /* PickGymViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickGymViewController.h; sourceTree = "<group>"; };
+		637FAF1F15D032ED001FCF01 /* PickGymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickGymViewController.m; sourceTree = "<group>"; };
+		637FAF2515D056D9001FCF01 /* Machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Machine.h; sourceTree = "<group>"; };
+		637FAF2615D056D9001FCF01 /* Machine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Machine.m; sourceTree = "<group>"; };
+		6386F56215BF520300292CCF /* MultiSpa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiSpa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6386F56615BF520300292CCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6386F56815BF520300292CCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6386F56A15BF520300292CCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6386F56E15BF520300292CCF /* MultiSpa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiSpa-Info.plist"; sourceTree = "<group>"; };
+		6386F57015BF520300292CCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6386F57215BF520300292CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6386F57415BF520300292CCF /* MultiSpa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiSpa-Prefix.pch"; sourceTree = "<group>"; };
+		6386F57515BF520300292CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6386F57615BF520300292CCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6386F57915BF520300292CCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		6386F57C15BF520300292CCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		6386F58615BF520300292CCF /* MultiSpaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiSpaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6386F58715BF520300292CCF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6386F58F15BF520300292CCF /* MultiSpaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiSpaTests-Info.plist"; sourceTree = "<group>"; };
+		6386F59115BF520300292CCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6386F59315BF520300292CCF /* MultiSpaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiSpaTests.h; sourceTree = "<group>"; };
+		6386F59415BF520300292CCF /* MultiSpaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiSpaTests.m; sourceTree = "<group>"; };
+		63C5B03F15CB1ABD0003489D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		63FACF9215C9718500039DC0 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		63FACF9315C9718500039DC0 /* cardio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardio.png; sourceTree = "<group>"; };
+		63FACF9415C9718500039DC0 /* dancing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dancing.png; sourceTree = "<group>"; };
+		63FACF9515C9718500039DC0 /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
+		63FACF9615C9718500039DC0 /* spinning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinning.png; sourceTree = "<group>"; };
+		63FACF9715C9718500039DC0 /* triaplon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triaplon.png; sourceTree = "<group>"; };
+		63FACF9815C9718500039DC0 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		63FACF9915C9718500039DC0 /* yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoga.png; sourceTree = "<group>"; };
+		63FACFA715C981A100039DC0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		63FACFA915C9B9D200039DC0 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		63FACFAB15C9BCA700039DC0 /* bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom.png; sourceTree = "<group>"; };
+		63FACFAF15C9C4B700039DC0 /* MultiSpa.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = MultiSpa.sqlite; path = ../../../MultiSpa.sqlite; sourceTree = "<group>"; };
+		63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		63FACFB315C9C56400039DC0 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		63FACFB415C9C56400039DC0 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6386F55F15BF520300292CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FACFB215C9C4CC00039DC0 /* libsqlite3.0.dylib in Frameworks */,
+				6386F56715BF520300292CCF /* UIKit.framework in Frameworks */,
+				6386F56915BF520300292CCF /* Foundation.framework in Frameworks */,
+				6386F56B15BF520300292CCF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6386F58215BF520300292CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386F58815BF520300292CCF /* SenTestingKit.framework in Frameworks */,
+				6386F58915BF520300292CCF /* UIKit.framework in Frameworks */,
+				6386F58A15BF520300292CCF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630372B715C03B7C00F27433 /* STControls */ = {
+			isa = PBXGroup;
+			children = (
+				630372B815C03B7C00F27433 /* STComboText.h */,
+				630372B915C03B7C00F27433 /* STComboText.m */,
+				630372BA15C03B7C00F27433 /* STControls.h */,
+				630372BB15C03B7C00F27433 /* STDateText.h */,
+				630372BC15C03B7C00F27433 /* STDateText.m */,
+			);
+			path = STControls;
+			sourceTree = "<group>";
+		};
+		6386F55715BF520300292CCF = {
+			isa = PBXGroup;
+			children = (
+				63C5B03F15CB1ABD0003489D /* Default.png */,
+				63605A9C15CAF11100999009 /* logoApp.png */,
+				63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */,
+				6386F56C15BF520300292CCF /* MultiSpa */,
+				6386F58D15BF520300292CCF /* MultiSpaTests */,
+				6386F56515BF520300292CCF /* Frameworks */,
+				6386F56315BF520300292CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6386F56315BF520300292CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6386F56215BF520300292CCF /* MultiSpa.app */,
+				6386F58615BF520300292CCF /* MultiSpaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6386F56515BF520300292CCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6386F56615BF520300292CCF /* UIKit.framework */,
+				6386F56815BF520300292CCF /* Foundation.framework */,
+				6386F56A15BF520300292CCF /* CoreGraphics.framework */,
+				6386F58715BF520300292CCF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6386F56C15BF520300292CCF /* MultiSpa */ = {
+			isa = PBXGroup;
+			children = (
+				63FACFAF15C9C4B700039DC0 /* MultiSpa.sqlite */,
+				6386F57515BF520300292CCF /* AppDelegate.h */,
+				6386F57615BF520300292CCF /* AppDelegate.m */,
+				6386F57815BF520300292CCF /* MainStoryboard_iPhone.storyboard */,
+				6386F57B15BF520300292CCF /* MainStoryboard_iPad.storyboard */,
+				6386F56D15BF520300292CCF /* Supporting Files */,
+				630372C015C03C5300F27433 /* ClassesViewController.h */,
+				630372C115C03C5300F27433 /* ClassesViewController.m */,
+				630372D415C0B1C100F27433 /* Classes.h */,
+				630372D515C0B1C100F27433 /* Classes.m */,
+				63FACFB315C9C56400039DC0 /* DatabaseManager.h */,
+				63FACFB415C9C56400039DC0 /* DatabaseManager.m */,
+				637FAF1015D0188D001FCF01 /* MaquinasViewController.h */,
+				637FAF1115D0188D001FCF01 /* MaquinasViewController.m */,
+				637FAF1E15D032ED001FCF01 /* PickGymViewController.h */,
+				637FAF1F15D032ED001FCF01 /* PickGymViewController.m */,
+				637FAF2515D056D9001FCF01 /* Machine.h */,
+				637FAF2615D056D9001FCF01 /* Machine.m */,
+			);
+			path = MultiSpa;
+			sourceTree = "<group>";
+		};
+		6386F56D15BF520300292CCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63FACF9115C9718500039DC0 /* Images */,
+				630372C715C066CC00F27433 /* EasyTableView.h */,
+				630372C815C066CC00F27433 /* EasyTableView.m */,
+				630372B715C03B7C00F27433 /* STControls */,
+				6386F56E15BF520300292CCF /* MultiSpa-Info.plist */,
+				6386F56F15BF520300292CCF /* InfoPlist.strings */,
+				6386F57215BF520300292CCF /* main.m */,
+				6386F57415BF520300292CCF /* MultiSpa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6386F58D15BF520300292CCF /* MultiSpaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6386F59315BF520300292CCF /* MultiSpaTests.h */,
+				6386F59415BF520300292CCF /* MultiSpaTests.m */,
+				6386F58E15BF520300292CCF /* Supporting Files */,
+			);
+			path = MultiSpaTests;
+			sourceTree = "<group>";
+		};
+		6386F58E15BF520300292CCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6386F58F15BF520300292CCF /* MultiSpaTests-Info.plist */,
+				6386F59015BF520300292CCF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63FACF9115C9718500039DC0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				637FAF1615D022DD001FCF01 /* timthumb.jpeg */,
+				637FAF1815D02336001FCF01 /* machines.png */,
+				637FAF1415D02257001FCF01 /* calendar.png */,
+				63FACFAB15C9BCA700039DC0 /* bottom.png */,
+				63FACFA915C9B9D200039DC0 /* top.png */,
+				63FACFA715C981A100039DC0 /* logo.png */,
+				63FACF9215C9718500039DC0 /* blue.png */,
+				63FACF9315C9718500039DC0 /* cardio.png */,
+				63FACF9415C9718500039DC0 /* dancing.png */,
+				63FACF9515C9718500039DC0 /* running.png */,
+				63FACF9615C9718500039DC0 /* spinning.png */,
+				63FACF9715C9718500039DC0 /* triaplon.png */,
+				63FACF9815C9718500039DC0 /* yellow.png */,
+				63FACF9915C9718500039DC0 /* yoga.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6386F56115BF520300292CCF /* MultiSpa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6386F59815BF520300292CCF /* Build configuration list for PBXNativeTarget "MultiSpa" */;
+			buildPhases = (
+				6386F55E15BF520300292CCF /* Sources */,
+				6386F55F15BF520300292CCF /* Frameworks */,
+				6386F56015BF520300292CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiSpa;
+			productName = MultiSpa;
+			productReference = 6386F56215BF520300292CCF /* MultiSpa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6386F58515BF520300292CCF /* MultiSpaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6386F59B15BF520300292CCF /* Build configuration list for PBXNativeTarget "MultiSpaTests" */;
+			buildPhases = (
+				6386F58115BF520300292CCF /* Sources */,
+				6386F58215BF520300292CCF /* Frameworks */,
+				6386F58315BF520300292CCF /* Resources */,
+				6386F58415BF520300292CCF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6386F58C15BF520300292CCF /* PBXTargetDependency */,
+			);
+			name = MultiSpaTests;
+			productName = MultiSpaTests;
+			productReference = 6386F58615BF520300292CCF /* MultiSpaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6386F55915BF520300292CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6386F55C15BF520300292CCF /* Build configuration list for PBXProject "MultiSpa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6386F55715BF520300292CCF;
+			productRefGroup = 6386F56315BF520300292CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6386F56115BF520300292CCF /* MultiSpa */,
+				6386F58515BF520300292CCF /* MultiSpaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6386F56015BF520300292CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386F57115BF520300292CCF /* InfoPlist.strings in Resources */,
+				6386F57A15BF520300292CCF /* MainStoryboard_iPhone.storyboard in Resources */,
+				6386F57D15BF520300292CCF /* MainStoryboard_iPad.storyboard in Resources */,
+				63FACF9A15C9718500039DC0 /* blue.png in Resources */,
+				63FACF9B15C9718500039DC0 /* cardio.png in Resources */,
+				63FACF9C15C9718500039DC0 /* dancing.png in Resources */,
+				63FACF9D15C9718500039DC0 /* running.png in Resources */,
+				63FACF9E15C9718500039DC0 /* spinning.png in Resources */,
+				63FACF9F15C9718500039DC0 /* triaplon.png in Resources */,
+				63FACFA015C9718500039DC0 /* yellow.png in Resources */,
+				63FACFA115C9718500039DC0 /* yoga.png in Resources */,
+				63FACFA815C981A100039DC0 /* logo.png in Resources */,
+				63FACFAA15C9B9D200039DC0 /* top.png in Resources */,
+				63FACFAC15C9BCA700039DC0 /* bottom.png in Resources */,
+				63FACFB015C9C4B800039DC0 /* MultiSpa.sqlite in Resources */,
+				63605A9D15CAF11100999009 /* logoApp.png in Resources */,
+				63C5B04015CB1ABD0003489D /* Default.png in Resources */,
+				637FAF1515D02257001FCF01 /* calendar.png in Resources */,
+				637FAF1715D022DD001FCF01 /* timthumb.jpeg in Resources */,
+				637FAF1915D02336001FCF01 /* machines.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6386F58315BF520300292CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386F59215BF520300292CCF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6386F58415BF520300292CCF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6386F55E15BF520300292CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386F57315BF520300292CCF /* main.m in Sources */,
+				6386F57715BF520300292CCF /* AppDelegate.m in Sources */,
+				630372BD15C03B7C00F27433 /* STComboText.m in Sources */,
+				630372BE15C03B7C00F27433 /* STDateText.m in Sources */,
+				630372C215C03C5300F27433 /* ClassesViewController.m in Sources */,
+				630372C915C066CD00F27433 /* EasyTableView.m in Sources */,
+				630372D615C0B1C100F27433 /* Classes.m in Sources */,
+				63FACFB515C9C56400039DC0 /* DatabaseManager.m in Sources */,
+				637FAF1215D0188D001FCF01 /* MaquinasViewController.m in Sources */,
+				637FAF2015D032ED001FCF01 /* PickGymViewController.m in Sources */,
+				637FAF2715D056D9001FCF01 /* Machine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6386F58115BF520300292CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386F59515BF520300292CCF /* MultiSpaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6386F58C15BF520300292CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6386F56115BF520300292CCF /* MultiSpa */;
+			targetProxy = 6386F58B15BF520300292CCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6386F56F15BF520300292CCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6386F57015BF520300292CCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6386F57815BF520300292CCF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6386F57915BF520300292CCF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6386F57B15BF520300292CCF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6386F57C15BF520300292CCF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6386F59015BF520300292CCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6386F59115BF520300292CCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6386F59615BF520300292CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carlos Sirias (5EY5JY6R85)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "F6EE88BB-128E-4117-B834-AE411C78FD6C";
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6386F59715BF520300292CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carlos Sirias (5EY5JY6R85)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "F6EE88BB-128E-4117-B834-AE411C78FD6C";
+				SDKROOT = iphoneos5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6386F59915BF520300292CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
+				INFOPLIST_FILE = "MultiSpa/MultiSpa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6386F59A15BF520300292CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
+				INFOPLIST_FILE = "MultiSpa/MultiSpa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6386F59C15BF520300292CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiSpa.app/MultiSpa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
+				INFOPLIST_FILE = "MultiSpaTests/MultiSpaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6386F59D15BF520300292CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiSpa.app/MultiSpa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
+				INFOPLIST_FILE = "MultiSpaTests/MultiSpaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6386F55C15BF520300292CCF /* Build configuration list for PBXProject "MultiSpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6386F59615BF520300292CCF /* Debug */,
+				6386F59715BF520300292CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6386F59815BF520300292CCF /* Build configuration list for PBXNativeTarget "MultiSpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6386F59915BF520300292CCF /* Debug */,
+				6386F59A15BF520300292CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6386F59B15BF520300292CCF /* Build configuration list for PBXNativeTarget "MultiSpaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6386F59C15BF520300292CCF /* Debug */,
+				6386F59D15BF520300292CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6386F55915BF520300292CCF /* Project object */;
+}

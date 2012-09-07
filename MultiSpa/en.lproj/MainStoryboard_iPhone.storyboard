@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0RF-Nc-h0a">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Classes View Controller - Calendario de Clases-->
+        <scene sceneID="neM-lN-dkm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJ3-2b-jjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController wantsFullScreenLayout="YES" id="CYN-g8-rfk" customClass="ClassesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9g-Zf-GSQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" id="USd-rG-08g">
+                                <rect key="frame" x="10" y="77" width="300" height="270"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="itemCell" rowHeight="76" id="GYA-Yx-HuO">
+                                        <rect key="frame" x="0.0" y="22" width="300" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CYN-g8-rfk" id="38A-vU-RJE"/>
+                                    <outlet property="delegate" destination="CYN-g8-rfk" id="wPb-T3-nvG"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="9ks-nU-Sgc">
+                                <rect key="frame" x="10" y="38" width="300" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VQo-YZ-gKt">
+                                        <rect key="frame" x="0.0" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="D">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="R5l-XE-Kbi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bZv-og-mCt">
+                                        <rect key="frame" x="43" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="L">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="tkC-5s-Lhm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FK5-jg-1Er">
+                                        <rect key="frame" x="90" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="M">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="wEo-QI-HQe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mr8-Z4-1dN">
+                                        <rect key="frame" x="133" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="K">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="bSa-d2-d6H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bqn-6r-v9P">
+                                        <rect key="frame" x="176" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="J">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="g9B-ob-d4c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kpb-7X-QrV">
+                                        <rect key="frame" x="222" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="V">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="3i8-Ov-4oQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qzc-xK-CUY">
+                                        <rect key="frame" x="265" y="6" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="S">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDay:" destination="CYN-g8-rfk" eventType="touchUpInside" id="M8e-tR-egB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Calendario de Clases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QgR-6P-kEO">
+                                <rect key="frame" x="70" y="0.0" width="181" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pYe-tw-ska" appends="YES" id="wnC-Fs-sOo"/>
+                            <outletCollection property="gestureRecognizers" destination="Sb6-pq-61X" appends="YES" id="Tsd-MQ-S6Z"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendario de Clases" image="calendar.png" id="OYb-6b-1yw"/>
+                    <navigationItem key="navigationItem" id="CGf-at-cUd"/>
+                    <connections>
+                        <outlet property="tableView" destination="USd-rG-08g" id="nl8-5H-QyM"/>
+                    </connections>
+                </viewController>
+                <swipeGestureRecognizer direction="right" id="pYe-tw-ska">
+                    <connections>
+                        <action selector="swipeLeft:" destination="CYN-g8-rfk" id="vF6-Vg-prE"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Sb6-pq-61X">
+                    <connections>
+                        <action selector="swipeRight:" destination="CYN-g8-rfk" id="KjK-Ti-AoO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1518" y="-161"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zel-TL-sXm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Hs-xd-18j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController wantsFullScreenLayout="YES" definesPresentationContext="YES" id="0RF-Nc-h0a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i82-B9-zMC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q7w-5z-6hh" kind="relationship" relationship="rootViewController" id="cM6-iR-IMr"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="581" y="623"/>
+        </scene>
+        <!--Pick Gym View Controller - Gimnasio-->
+        <scene sceneID="pao-0Q-Q8q">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoS-Kp-qYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController wantsFullScreenLayout="YES" id="Q7w-5z-6hh" customClass="PickGymViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spw-Sx-i2i">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Seleccione un Gimnasio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="XEw-DG-fOq">
+                                <rect key="frame" x="20" y="38" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="Crb-xs-h10">
+                                <rect key="frame" x="0.0" y="90" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q7w-5z-6hh" id="e8A-O4-hlK"/>
+                                    <outlet property="delegate" destination="Q7w-5z-6hh" id="Sla-sc-cjc"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oTp-PT-ES1">
+                                <rect key="frame" x="113" y="332" width="95" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Bs-sH-H7x" kind="push" identifier="pushGym" id="JXQ-rV-j6c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gimnasio" id="j7A-DR-YV7"/>
+                    <connections>
+                        <outlet property="gymPicker" destination="Crb-xs-h10" id="bfO-TO-FlY"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="979" y="634"/>
+        </scene>
+        <!--Maquinas View Controller - Máquinas-->
+        <scene sceneID="DpO-Hi-iQO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI9-5t-iQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController wantsFullScreenLayout="YES" id="Y7n-Zq-BP2" customClass="MaquinasViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DA8-Fy-y9Y">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="vxG-Ry-ckc">
+                                <rect key="frame" x="-20" y="-20" width="320" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Máquinas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="15f-EV-KiA">
+                                        <rect key="frame" x="75" y="20" width="211" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Seleccione el número de la máquina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JDr-vH-DPq">
+                                        <rect key="frame" x="40" y="53" width="276" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.png" id="M9M-YK-Lzh">
+                                        <rect key="frame" x="20" y="121" width="161" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Machine Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pST-Z2-6MR">
+                                        <rect key="frame" x="179" y="141" width="153" height="108"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="vCn-2c-tGA">
+                                        <rect key="frame" x="40" y="248" width="280" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="bXj-OP-DZ5" customClass="STComboText">
+                                        <rect key="frame" x="126" y="82" width="97" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y7n-Zq-BP2" id="Vef-J7-ZJ8"/>
+                                            <outlet property="delegateVCtr" destination="Y7n-Zq-BP2" id="igp-JI-OUp"/>
+                                        </connections>
+                                    </textField>
+                                    <webView contentMode="scaleToFill" id="Tny-JP-hvh">
+                                        <rect key="frame" x="77" y="401" width="206" height="149"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <dataDetectorType key="dataDetectorTypes"/>
+                                    </webView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="Y7n-Zq-BP2" id="cmK-uo-c2q"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Máquinas" image="machines.png" id="3yf-UG-sho"/>
+                    <connections>
+                        <outlet property="description" destination="vCn-2c-tGA" id="FCw-Ju-ABr"/>
+                        <outlet property="image" destination="M9M-YK-Lzh" id="nb7-w1-2B6"/>
+                        <outlet property="machineComboText" destination="bXj-OP-DZ5" id="JdK-EL-Brc"/>
+                        <outlet property="msgSelectNumberMachine" destination="JDr-vH-DPq" id="w7E-gO-Uqc"/>
+                        <outlet property="name" destination="pST-Z2-6MR" id="eiX-w5-EiD"/>
+                        <outlet property="scroller" destination="vxG-Ry-ckc" id="orX-Vn-aML"/>
+                        <outlet property="videoView" destination="Tny-JP-hvh" id="liw-tw-ZVa"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1518" y="427"/>
+        </scene>
+        <!--Tab Bar Controller - Gimnasio-->
+        <scene sceneID="6rA-tx-rN2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Daz-gC-Anz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController wantsFullScreenLayout="YES" id="6Bs-sH-H7x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Gimnasio" id="eYw-8S-COg"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Bqv-oa-pXU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CYN-g8-rfk" kind="relationship" relationship="viewControllers" id="zbU-UR-NM4"/>
+                        <segue destination="Y7n-Zq-BP2" kind="relationship" relationship="viewControllers" id="pML-3p-bmP"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1002" y="-60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar.png" width="30" height="28"/>
+        <image name="logo.png" width="247" height="129"/>
+        <image name="machines.png" width="48" height="48"/>
+    </resources>
+    <classes>
+        <class className="ClassesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ClassesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectDay:"/>
+                <relationship kind="action" name="swipeLeft:"/>
+                <relationship kind="action" name="swipeRight:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MaquinasViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MaquinasViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="machineComboText" candidateClass="STComboText"/>
+                <relationship kind="outlet" name="msgSelectNumberMachine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="videoView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="PickGymViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickGymViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="gymPicker" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="STComboText" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/STComboText.h"/>
+            <relationships>
+                <relationship kind="outlet" name="delegateVCtr" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
