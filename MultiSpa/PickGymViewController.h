@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *gymPicker;
 @property (strong, nonatomic) NSArray *gymsArray;
 @property (strong, nonatomic) NSString *selectedKey;
+- (IBAction)share:(id)sender;
 
 @end

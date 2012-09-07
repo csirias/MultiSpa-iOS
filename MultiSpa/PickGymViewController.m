@@ -8,6 +8,7 @@
 
 #import "PickGymViewController.h"
 #import "DatabaseManager.h"
+#import "SHK.h"
 
 @interface PickGymViewController ()
 
@@ -86,5 +87,15 @@
         UITabBarController *tb = [segue destinationViewController];
         tb.title = self.selectedKey;
     }
+}
+- (IBAction)share:(id)sender {
+	SHKItem *item = [SHKItem URL:[NSURL URLWithString:@"http://www.grupomultispa.com/"] title:@"Gimnasios Multispa" contentType:(SHKURLContentTypeUndefined)];
+    //SHKItem *item = [SHKItem URL:[NSURL URLWithString:@"http://www.youtube.com/watch?v=3t8MeE8Ik4Y"] title:@"Big bang" contentType:SHKURLContentTypeVideo];
+    item.facebookURLSharePictureURI = @"http://www.grupomultispa.com/sites/all/themes/multispa/logo.png";
+    item.facebookURLShareDescription = @"Somos centros de entrenamiento específico MULTISPA con más de 25 años de experiencia. Nuestros centros promocionan la salud y el ejercicio y buscan motivar, educar e inspirar a las personas de todas las edades a vivir un estilo de vida saludable en un ambiente agradable.";
+    //item.mailToRecipients = [NSArray arrayWithObjects:@"frodo@middle-earth.me", @"gandalf@middle-earth.me", nil];
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    [SHK setRootViewController:self];
+	[actionSheet showFromToolbar:self.navigationController.toolbar]; 
 }
 @end

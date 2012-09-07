@@ -33,6 +33,7 @@
 		6386F59215BF520300292CCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6386F59015BF520300292CCF /* InfoPlist.strings */; };
 		6386F59515BF520300292CCF /* MultiSpaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6386F59415BF520300292CCF /* MultiSpaTests.m */; };
 		63C5B04015CB1ABD0003489D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C5B03F15CB1ABD0003489D /* Default.png */; };
+		63D9534415FA4C5C00EF9085 /* MySHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D9534315FA4C5C00EF9085 /* MySHKConfigurator.m */; };
 		63FACF9A15C9718500039DC0 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9215C9718500039DC0 /* blue.png */; };
 		63FACF9B15C9718500039DC0 /* cardio.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9315C9718500039DC0 /* cardio.png */; };
 		63FACF9C15C9718500039DC0 /* dancing.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FACF9415C9718500039DC0 /* dancing.png */; };
@@ -47,6 +48,18 @@
 		63FACFB015C9C4B800039DC0 /* MultiSpa.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 63FACFAF15C9C4B700039DC0 /* MultiSpa.sqlite */; };
 		63FACFB215C9C4CC00039DC0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */; };
 		63FACFB515C9C56400039DC0 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FACFB415C9C56400039DC0 /* DatabaseManager.m */; };
+		63FAED0E15FA3D7200CA5D00 /* libShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED0415FA3D1200CA5D00 /* libShareKit.a */; };
+		63FAED0F15FA3DA600CA5D00 /* ShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63FAED0615FA3D1200CA5D00 /* ShareKit.bundle */; };
+		63FAED1A15FA3F8800CA5D00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1015FA3F8800CA5D00 /* CFNetwork.framework */; };
+		63FAED1B15FA3F8800CA5D00 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1115FA3F8800CA5D00 /* Twitter.framework */; };
+		63FAED1C15FA3F8800CA5D00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1215FA3F8800CA5D00 /* CoreLocation.framework */; };
+		63FAED1D15FA3F8800CA5D00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1315FA3F8800CA5D00 /* UIKit.framework */; };
+		63FAED1E15FA3F8800CA5D00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1415FA3F8800CA5D00 /* Foundation.framework */; };
+		63FAED1F15FA3F8800CA5D00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1515FA3F8800CA5D00 /* CoreGraphics.framework */; };
+		63FAED2015FA3F8800CA5D00 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1615FA3F8800CA5D00 /* MessageUI.framework */; };
+		63FAED2115FA3F8800CA5D00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1715FA3F8800CA5D00 /* Security.framework */; };
+		63FAED2215FA3F8800CA5D00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1815FA3F8800CA5D00 /* SystemConfiguration.framework */; };
+		63FAED2315FA3F8800CA5D00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FAED1915FA3F8800CA5D00 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +69,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6386F56115BF520300292CCF;
 			remoteInfo = MultiSpa;
+		};
+		63FAED0115FA3D1200CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "Demo App";
+		};
+		63FAED0315FA3D1200CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5342E1552AADD00171BCE;
+			remoteInfo = "Static Library";
+		};
+		63FAED0515FA3D1200CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB5360F1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
+		};
+		63FAED0715FA3D1200CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A0F9246156BA2A0009CB40A;
+			remoteInfo = "Static Library No Submodules";
+		};
+		63FAED0A15FA3D5400CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB5342D1552AADD00171BCE;
+			remoteInfo = "Static Library";
+		};
+		63FAED0C15FA3D5400CA5D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
+			remoteInfo = "Resource Bundle";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -100,6 +155,8 @@
 		6386F59315BF520300292CCF /* MultiSpaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiSpaTests.h; sourceTree = "<group>"; };
 		6386F59415BF520300292CCF /* MultiSpaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiSpaTests.m; sourceTree = "<group>"; };
 		63C5B03F15CB1ABD0003489D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		63D9534215FA4A6A00EF9085 /* MySHKConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySHKConfigurator.h; sourceTree = "<group>"; };
+		63D9534315FA4C5C00EF9085 /* MySHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySHKConfigurator.m; sourceTree = "<group>"; };
 		63FACF9215C9718500039DC0 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		63FACF9315C9718500039DC0 /* cardio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardio.png; sourceTree = "<group>"; };
 		63FACF9415C9718500039DC0 /* dancing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dancing.png; sourceTree = "<group>"; };
@@ -115,6 +172,17 @@
 		63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		63FACFB315C9C56400039DC0 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		63FACFB415C9C56400039DC0 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShareKit.xcodeproj; path = Submodules/ShareKit/ShareKit.xcodeproj; sourceTree = "<group>"; };
+		63FAED1015FA3F8800CA5D00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		63FAED1115FA3F8800CA5D00 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		63FAED1215FA3F8800CA5D00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63FAED1315FA3F8800CA5D00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63FAED1415FA3F8800CA5D00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63FAED1515FA3F8800CA5D00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63FAED1615FA3F8800CA5D00 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		63FAED1715FA3F8800CA5D00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		63FAED1815FA3F8800CA5D00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63FAED1915FA3F8800CA5D00 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +190,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FAED0E15FA3D7200CA5D00 /* libShareKit.a in Frameworks */,
 				63FACFB215C9C4CC00039DC0 /* libsqlite3.0.dylib in Frameworks */,
 				6386F56715BF520300292CCF /* UIKit.framework in Frameworks */,
 				6386F56915BF520300292CCF /* Foundation.framework in Frameworks */,
 				6386F56B15BF520300292CCF /* CoreGraphics.framework in Frameworks */,
+				63FAED1A15FA3F8800CA5D00 /* CFNetwork.framework in Frameworks */,
+				63FAED1B15FA3F8800CA5D00 /* Twitter.framework in Frameworks */,
+				63FAED1C15FA3F8800CA5D00 /* CoreLocation.framework in Frameworks */,
+				63FAED1D15FA3F8800CA5D00 /* UIKit.framework in Frameworks */,
+				63FAED1E15FA3F8800CA5D00 /* Foundation.framework in Frameworks */,
+				63FAED1F15FA3F8800CA5D00 /* CoreGraphics.framework in Frameworks */,
+				63FAED2015FA3F8800CA5D00 /* MessageUI.framework in Frameworks */,
+				63FAED2115FA3F8800CA5D00 /* Security.framework in Frameworks */,
+				63FAED2215FA3F8800CA5D00 /* SystemConfiguration.framework in Frameworks */,
+				63FAED2315FA3F8800CA5D00 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +236,7 @@
 		6386F55715BF520300292CCF = {
 			isa = PBXGroup;
 			children = (
+				63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */,
 				63C5B03F15CB1ABD0003489D /* Default.png */,
 				63605A9C15CAF11100999009 /* logoApp.png */,
 				63FACFB115C9C4CC00039DC0 /* libsqlite3.0.dylib */,
@@ -179,6 +259,16 @@
 		6386F56515BF520300292CCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63FAED1015FA3F8800CA5D00 /* CFNetwork.framework */,
+				63FAED1115FA3F8800CA5D00 /* Twitter.framework */,
+				63FAED1215FA3F8800CA5D00 /* CoreLocation.framework */,
+				63FAED1315FA3F8800CA5D00 /* UIKit.framework */,
+				63FAED1415FA3F8800CA5D00 /* Foundation.framework */,
+				63FAED1515FA3F8800CA5D00 /* CoreGraphics.framework */,
+				63FAED1615FA3F8800CA5D00 /* MessageUI.framework */,
+				63FAED1715FA3F8800CA5D00 /* Security.framework */,
+				63FAED1815FA3F8800CA5D00 /* SystemConfiguration.framework */,
+				63FAED1915FA3F8800CA5D00 /* CoreFoundation.framework */,
 				6386F56615BF520300292CCF /* UIKit.framework */,
 				6386F56815BF520300292CCF /* Foundation.framework */,
 				6386F56A15BF520300292CCF /* CoreGraphics.framework */,
@@ -190,6 +280,8 @@
 		6386F56C15BF520300292CCF /* MultiSpa */ = {
 			isa = PBXGroup;
 			children = (
+				63D9534215FA4A6A00EF9085 /* MySHKConfigurator.h */,
+				63D9534315FA4C5C00EF9085 /* MySHKConfigurator.m */,
 				63FACFAF15C9C4B700039DC0 /* MultiSpa.sqlite */,
 				6386F57515BF520300292CCF /* AppDelegate.h */,
 				6386F57615BF520300292CCF /* AppDelegate.m */,
@@ -267,6 +359,17 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		63FAECF715FA3D1200CA5D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FAED0215FA3D1200CA5D00 /* ShareKitDemo.app */,
+				63FAED0415FA3D1200CA5D00 /* libShareKit.a */,
+				63FAED0615FA3D1200CA5D00 /* ShareKit.bundle */,
+				63FAED0815FA3D1200CA5D00 /* libShareKitNoSubmodules.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,6 +384,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				63FAED0B15FA3D5400CA5D00 /* PBXTargetDependency */,
+				63FAED0D15FA3D5400CA5D00 /* PBXTargetDependency */,
 			);
 			name = MultiSpa;
 			productName = MultiSpa;
@@ -324,6 +429,12 @@
 			mainGroup = 6386F55715BF520300292CCF;
 			productRefGroup = 6386F56315BF520300292CCF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63FAECF715FA3D1200CA5D00 /* Products */;
+					ProjectRef = 63FAECF615FA3D1200CA5D00 /* ShareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6386F56115BF520300292CCF /* MultiSpa */,
@@ -331,6 +442,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63FAED0215FA3D1200CA5D00 /* ShareKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ShareKitDemo.app;
+			remoteRef = 63FAED0115FA3D1200CA5D00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63FAED0415FA3D1200CA5D00 /* libShareKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKit.a;
+			remoteRef = 63FAED0315FA3D1200CA5D00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63FAED0615FA3D1200CA5D00 /* ShareKit.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ShareKit.bundle;
+			remoteRef = 63FAED0515FA3D1200CA5D00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63FAED0815FA3D1200CA5D00 /* libShareKitNoSubmodules.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShareKitNoSubmodules.a;
+			remoteRef = 63FAED0715FA3D1200CA5D00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6386F56015BF520300292CCF /* Resources */ = {
@@ -357,6 +499,7 @@
 				637FAF1515D02257001FCF01 /* calendar.png in Resources */,
 				637FAF1715D022DD001FCF01 /* timthumb.jpeg in Resources */,
 				637FAF1915D02336001FCF01 /* machines.png in Resources */,
+				63FAED0F15FA3DA600CA5D00 /* ShareKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +545,7 @@
 				637FAF1215D0188D001FCF01 /* MaquinasViewController.m in Sources */,
 				637FAF2015D032ED001FCF01 /* PickGymViewController.m in Sources */,
 				637FAF2715D056D9001FCF01 /* Machine.m in Sources */,
+				63D9534415FA4C5C00EF9085 /* MySHKConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +564,16 @@
 			isa = PBXTargetDependency;
 			target = 6386F56115BF520300292CCF /* MultiSpa */;
 			targetProxy = 6386F58B15BF520300292CCF /* PBXContainerItemProxy */;
+		};
+		63FAED0B15FA3D5400CA5D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Static Library";
+			targetProxy = 63FAED0A15FA3D5400CA5D00 /* PBXContainerItemProxy */;
+		};
+		63FAED0D15FA3D5400CA5D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Resource Bundle";
+			targetProxy = 63FAED0C15FA3D5400CA5D00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,7 +670,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
 				INFOPLIST_FILE = "MultiSpa/MultiSpa-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,7 +686,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiSpa/MultiSpa-Prefix.pch";
 				INFOPLIST_FILE = "MultiSpa/MultiSpa-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Submodules/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
