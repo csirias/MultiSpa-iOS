@@ -29,7 +29,7 @@
     _number = [dict objectForKey:@"number"];
     _name = [dict objectForKey:@"name"];
     _description = [dict objectForKey:@"description"];
-    _videoURL = [dict objectForKey:@"videoURL"];
+    _videoURL = [dict objectForKey:@"video"];
     _image = [dict objectForKey:@"image"];
     
     return self;

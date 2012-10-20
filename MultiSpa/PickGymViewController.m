@@ -8,6 +8,7 @@
 
 #import "PickGymViewController.h"
 #import "DatabaseManager.h"
+#import "JSONparser.h"
 #import "SHK.h"
 
 @interface PickGymViewController ()
@@ -18,6 +19,7 @@
 @synthesize gymPicker;
 @synthesize gymsArray;
 @synthesize selectedKey;
+@synthesize textView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,19 +33,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DatabaseManager *dbManager = [[DatabaseManager alloc] init];
-    [dbManager CopyDbToDocumentsFolder];
     
-    gymsArray = [dbManager getGyms];
+    
+    //DatabaseManager *dbManager = [[DatabaseManager alloc] init];
+    //gymsArray = [dbManager getGyms];
+    JSONparser *jParser = [[JSONparser alloc] init];
+    gymsArray = [jParser getGymsArray];
     if(gymsArray)
         self.selectedKey = [gymsArray objectAtIndex:0];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
     [self setGymPicker:nil];
     [self setGymsArray:nil];
+    [self setTextView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -88,14 +92,37 @@
         tb.title = self.selectedKey;
     }
 }
+
++ (NSString*) copyResourceFileToDocuments:(NSString*)fileName withExt:(NSString*)fileExt
+{
+    //Look at documents for existing file
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@", fileName, fileExt]];
+    
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    
+    if(![fileManager fileExistsAtPath:path])
+    {
+        NSError *nError;
+        [fileManager copyItemAtPath:[[NSBundle mainBundle] pathForResource:fileName ofType:fileExt] toPath:path error:&nError];
+    }
+    
+    return path;
+}
+
+
 - (IBAction)share:(id)sender {
 	SHKItem *item = [SHKItem URL:[NSURL URLWithString:@"http://www.grupomultispa.com/"] title:@"Gimnasios Multispa" contentType:(SHKURLContentTypeUndefined)];
-    //SHKItem *item = [SHKItem URL:[NSURL URLWithString:@"http://www.youtube.com/watch?v=3t8MeE8Ik4Y"] title:@"Big bang" contentType:SHKURLContentTypeVideo];
     item.facebookURLSharePictureURI = @"http://www.grupomultispa.com/sites/all/themes/multispa/logo.png";
     item.facebookURLShareDescription = @"Somos centros de entrenamiento específico MULTISPA con más de 25 años de experiencia. Nuestros centros promocionan la salud y el ejercicio y buscan motivar, educar e inspirar a las personas de todas las edades a vivir un estilo de vida saludable en un ambiente agradable.";
-    //item.mailToRecipients = [NSArray arrayWithObjects:@"frodo@middle-earth.me", @"gandalf@middle-earth.me", nil];
 	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
     [SHK setRootViewController:self];
-	[actionSheet showFromToolbar:self.navigationController.toolbar]; 
+	[actionSheet showFromToolbar:self.navigationController.toolbar];
+    
+    DatabaseManager *dbManager = [[DatabaseManager alloc] init];
+    
+    [dbManager setShare:1];
+    NSLog(@"edit: %d",[dbManager getShare]);
 }
 @end

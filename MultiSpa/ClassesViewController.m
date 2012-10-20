@@ -7,6 +7,9 @@
 //
 
 #import "ClassesViewController.h"
+#import "DatabaseManager.h"
+#import "SHK.h"
+#import "JSONparser.h"
 
 static NSUInteger multiSpaTableViewHeight = 70;
 static NSUInteger multiSpaTableViewWidth  = 100;
@@ -34,6 +37,8 @@ static BOOL is_ipad()
 @synthesize selectedKey = _selectedKey;
 @synthesize schedules = _schedules;
 @synthesize DBManager;
+@synthesize jParser;
+@synthesize shareButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,9 +58,16 @@ static BOOL is_ipad()
     daysOfWeeek = [self getDaysOfWeek:today];
     
     self.DBManager = [[DatabaseManager alloc] init];
-    [self.DBManager CopyDbToDocumentsFolder];
+    self.jParser = [[JSONparser alloc] init];
+  //  [self.DBManager CopyDbToDocumentsFolder];
     
-    images = [self.DBManager getClassesImages];
+    //   [dbManager CopyDbToDocumentsFolder];   // No vuelve a copiar la base de documentos, usa la local
+    
+//    if ([DBManager getShare]) {
+//        shareButton.hidden = TRUE;
+//    };
+    
+    images = [self.jParser getClassesImages];
     
     self.selectedKey = [self.tabBarController title];
     
@@ -66,6 +78,7 @@ static BOOL is_ipad()
 {
     [self setTableView:nil];
     [self setDBManager:nil];
+    [self setShareButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -89,7 +102,7 @@ static BOOL is_ipad()
     if(details)
         return details;
     
-    details = [self separateBySchedule:[self.DBManager getClassesFromDay:[daysOfWeeek objectAtIndex:0] toDay:[daysOfWeeek objectAtIndex:6]]];
+    details = [self separateBySchedule:[self.jParser getWeekClassesFromGym:self.selectedKey]];
     
     [self getClassesByDay:[daysOfWeeek objectAtIndex:selectedDay] andLocal:self.selectedKey];
     [self getClassesTypes:details];
@@ -214,7 +227,16 @@ static BOOL is_ipad()
     easyTableView[indexPath.section] = et;
     
     easyTableView[indexPath.section].data = forData;
-    [cell.contentView addSubview:easyTableView[indexPath.section]];
+    
+    if ([DBManager getShare] == 0 && indexPath.section == 2)
+    {
+     //   [cell.contentView addSubview:shareButton];
+        shareButton.hidden = FALSE;
+    }
+    else {
+        shareButton.hidden = TRUE;
+        [cell.contentView addSubview:easyTableView[indexPath.section]];
+    }
     return cell;
 }
 
@@ -289,7 +311,12 @@ static BOOL is_ipad()
     
     UILabel *titleLabel = (UILabel*)[view viewWithTag:kClassCellTitleTag];
     titleLabel.text = [[et.data objectAtIndex:index] objectAtIndex:0];
-    imageView.image = [images objectForKey:titleLabel.text];
+    UIImage *image = [images objectForKey:titleLabel.text];
+    if(image == nil) {
+        images = [self.jParser getClassesImages];
+        image = [images objectForKey:titleLabel.text];
+    }
+    imageView.image = image;
 }
 
 
@@ -411,7 +438,8 @@ static BOOL is_ipad()
 
 - (NSArray*) getClassesByDay:(NSDate *)pDay andLocal:(NSString *)pGym
 {
-    details = [self separateBySchedule:[self.DBManager getClassesFromDay:[daysOfWeeek objectAtIndex:0] toDay:[daysOfWeeek objectAtIndex:6]]];
+    details = [self separateBySchedule:[self.jParser getWeekClassesFromGym:self.selectedKey]];
+    
     NSMutableArray *res = [NSMutableArray arrayWithObjects:[NSMutableArray array], [NSMutableArray array], [NSMutableArray array], nil];
     for( int i = 0; i < kSections; i++)
     {
@@ -513,6 +541,20 @@ static BOOL is_ipad()
     
     [self setSelectedDay: newDay];
    
+    [self reloadTable];
+}
+
+- (IBAction)share:(id)sender {
+    SHKItem *item = [SHKItem URL:[NSURL URLWithString:@"http://www.grupomultispa.com/"] title:@"Gimnasios Multispa" contentType:(SHKURLContentTypeWebpage)];
+    item.facebookURLSharePictureURI = @"http://www.grupomultispa.com/sites/all/themes/multispa/logo.png";
+    item.facebookURLShareDescription = @"Somos centros de entrenamiento específico MULTISPA con más de 25 años de experiencia. Nuestros centros promocionan la salud y el ejercicio y buscan motivar, educar e inspirar a las personas de todas las edades a vivir un estilo de vida saludable en un ambiente agradable.";
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    [SHK setRootViewController:self];
+	[actionSheet showFromToolbar:self.navigationController.toolbar];
+    
+    DatabaseManager *dbManager = [[DatabaseManager alloc] init];
+    
+    [dbManager setShare:1];
     [self reloadTable];
 }
 

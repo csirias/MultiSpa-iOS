@@ -23,6 +23,7 @@
 @property (nonatomic,retain) NSFileManager *fileMgr;
 
 -(void)CopyDbToDocumentsFolder;
+-(void)CopyDbFromDocumentsFolder;
 -(NSString *) GetDocumentDirectory;
 
 -(void)InsertRecords:(int) news_id :(int) category_id:(NSMutableString *) newTitle:(NSMutableString *) newDetails:(NSMutableString *) newImage;
@@ -36,4 +37,6 @@
 - (NSArray*) getGyms;
 -(NSArray*) getMachinesForGym: (NSString*)pGym;
 - (NSDictionary* ) getClassesImages;
+- (NSInteger)getShare;
+- (void)setShare: (NSInteger)val;
 @end

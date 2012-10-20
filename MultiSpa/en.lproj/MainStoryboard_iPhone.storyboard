@@ -155,6 +155,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UHK-1S-7Ah">
+                                <rect key="frame" x="15" y="310" width="290" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Compartir">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="CYN-g8-rfk" eventType="touchUpInside" id="vLS-PP-IlB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -166,6 +181,7 @@
                     <tabBarItem key="tabBarItem" title="Calendario de Clases" image="calendar.png" id="OYb-6b-1yw"/>
                     <navigationItem key="navigationItem" id="CGf-at-cUd"/>
                     <connections>
+                        <outlet property="shareButton" destination="UHK-1S-7Ah" id="P0I-Tx-8MF"/>
                         <outlet property="tableView" destination="USd-rG-08g" id="nl8-5H-QyM"/>
                     </connections>
                 </viewController>
@@ -236,27 +252,20 @@
                                     <segue destination="6Bs-sH-H7x" kind="push" identifier="pushGym" id="JXQ-rV-j6c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yq8-km-1bn">
-                                <rect key="frame" x="8" y="332" width="97" height="37"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="rUW-vI-cq4">
+                                <rect key="frame" x="55" y="10" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Compartir">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="share:" destination="Q7w-5z-6hh" eventType="touchUpInside" id="CBD-y9-Z9Y"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gimnasio" id="j7A-DR-YV7"/>
                     <connections>
                         <outlet property="gymPicker" destination="Crb-xs-h10" id="bfO-TO-FlY"/>
+                        <outlet property="textView" destination="rUW-vI-cq4" id="h8R-Nr-TOa"/>
                     </connections>
                 </viewController>
             </objects>
@@ -376,8 +385,10 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ClassesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="selectDay:"/>
+                <relationship kind="action" name="share:"/>
                 <relationship kind="action" name="swipeLeft:"/>
                 <relationship kind="action" name="swipeRight:"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
@@ -396,8 +407,8 @@
         <class className="PickGymViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PickGymViewController.h"/>
             <relationships>
-                <relationship kind="action" name="share:"/>
                 <relationship kind="outlet" name="gymPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="STComboText" superclassName="UITextField">

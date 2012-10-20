@@ -9,6 +9,7 @@
 #import "MaquinasViewController.h"
 #import "DatabaseManager.h"
 #import "Machine.h"
+#import "JSONparser.h"
 
 @interface MaquinasViewController ()
 
@@ -47,11 +48,13 @@
     [scroller setScrollEnabled:YES];
     [scroller setContentSize:CGSizeMake(320, 900)];
     
-    DBManager = [[DatabaseManager alloc] init];
-    [DBManager CopyDbToDocumentsFolder];
+    //DBManager = [[DatabaseManager alloc] init];
+    //[DBManager CopyDbToDocumentsFolder];
     selectedKey = [self.tabBarController title];
+    JSONparser *jParser = [[JSONparser alloc] init];
     
-    machinesArray = [DBManager getMachinesForGym:selectedKey];
+    machinesArray = [jParser getMachinesForGym:selectedKey];
+    //machinesArray = [DBManager getMachinesForGym:selectedKey];
     if([machinesArray count] == 0)
         selectedMachine = -1;
     else

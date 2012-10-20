@@ -39,6 +39,24 @@
     
 }
 
+-(void)CopyDbFromDocumentsFolder{
+    NSError *err=nil;
+    
+    fileMgr = [NSFileManager defaultManager];
+    
+    NSString *copydbpath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"MultiSpa.sqlite"]; 
+    
+    NSString *dbpath = [self.GetDocumentDirectory stringByAppendingPathComponent:@"MultiSpa.sqlite"];
+    
+    [fileMgr removeItemAtPath:copydbpath error:&err];
+    if(![fileMgr copyItemAtPath:dbpath toPath:copydbpath error:&err])
+    {
+        UIAlertView *tellErr = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to copy database." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [tellErr show];
+    }
+    
+}
+
 -(void)InsertRecords:
 (int) news_id :
 (int) category_id:
@@ -237,6 +255,74 @@
     @finally {
         return ret;
     }
+}
+
+- (NSInteger )getShare
+{
+    NSInteger ret = 0;
+    @try {
+        fileMgr = [NSFileManager defaultManager];
+        NSString *dbPath = [self.GetDocumentDirectory stringByAppendingPathComponent:@"MultiSpa.sqlite"];
+        BOOL success = [fileMgr fileExistsAtPath:dbPath];
+        if(!success)
+        {
+            NSLog(@"Cannot locate database file '%@'.", dbPath);
+        }
+        
+        sqlite3 *database;
+        if(!(sqlite3_open([dbPath UTF8String], &database) == SQLITE_OK))
+        {
+            NSLog(@"An error has occured.");
+        }
+        const char *sql = "SELECT * FROM Share Where rowid = ?";
+        sqlite3_stmt *sqlStatement = nil;
+        
+        if(sqlite3_prepare_v2(database, sql, -1, &sqlStatement, NULL) != SQLITE_OK)
+        {
+            NSLog(@"Problem with prepare statement");
+        }
+        
+        sqlite3_bind_int(sqlStatement, 1, 1);        
+        while (sqlite3_step(sqlStatement)==SQLITE_ROW) {
+            
+            NSInteger share = sqlite3_column_int(sqlStatement, 0);
+            ret = share;
+        }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"An exception occured: %@", [exception reason]);
+    }
+    @finally {
+        return ret;
+    }
+}
+
+- (void)setShare: (NSInteger)val
+{
+    
+    fileMgr = [NSFileManager defaultManager];
+    NSString *dbPath = [self.GetDocumentDirectory stringByAppendingPathComponent:@"MultiSpa.sqlite"];
+    BOOL success = [fileMgr fileExistsAtPath:dbPath];
+    if(!success)
+    {
+        NSLog(@"Cannot locate database file '%@'.", dbPath);
+    }
+    
+    sqlite3 *database;
+    if(!(sqlite3_open([dbPath UTF8String], &database) == SQLITE_OK))
+    {
+        NSLog(@"An error has occured.");
+    }    
+    const char *sql = "Update Share set share=? where rowid=1";
+    
+    
+    sqlite3_stmt *stmt=nil;
+    sqlite3_prepare_v2(database, sql, -1, &stmt, NULL);
+    sqlite3_bind_int(stmt, 1, val);
+    
+    sqlite3_step(stmt);
+    sqlite3_finalize(stmt);
+    sqlite3_close(database); 
 }
 
 - (NSArray*) getClassesFromDay: (NSDate *)pDate toDay:(NSDate *)pFinalDate

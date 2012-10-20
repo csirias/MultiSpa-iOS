@@ -11,6 +11,7 @@
 #import "EasyTableView.h"
 #import "Classes.h"
 #import "DatabaseManager.h"
+#import "JSONparser.h"
 
 #define kClassDaysButtons                5000 //First Day button
 #define kClassCellHorizontalTableViewTag 4000
@@ -29,8 +30,11 @@
 @property (strong, nonatomic) NSArray *schedules;
 @property (nonatomic,strong) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) DatabaseManager *DBManager;
+@property (strong, nonatomic) JSONparser *jParser;
+@property (strong, nonatomic) IBOutlet UIButton *shareButton;
 
 - (IBAction)selectDay:(id)sender;
 - (IBAction)swipeRight:(id)sender;
 - (IBAction)swipeLeft:(id)sender;
+- (IBAction)share:(id)sender;
 @end

@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/DatabaseManager.m"
-         timestampString = "365547152.467281"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "199"
-         endingLineNumber = "199"
+         startingLineNumber = "217"
+         endingLineNumber = "217"
          landmarkName = "-getClasses"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/DatabaseManager.m"
-         timestampString = "365547374.874949"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "214"
-         endingLineNumber = "214"
+         startingLineNumber = "232"
+         endingLineNumber = "232"
          landmarkName = "-getClasses"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/DatabaseManager.m"
-         timestampString = "365547377.585762"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "201"
-         endingLineNumber = "201"
+         startingLineNumber = "219"
+         endingLineNumber = "219"
          landmarkName = "-getClasses"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/ClassesViewController.m"
-         timestampString = "366047959.20376"
+         timestampString = "370970930.442096"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "228"
-         endingLineNumber = "228"
+         startingLineNumber = "250"
+         endingLineNumber = "250"
          landmarkName = "-setupEasyTableViewWithNumCells:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/DatabaseManager.m"
-         timestampString = "366044813.089113"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "451"
-         endingLineNumber = "451"
+         startingLineNumber = "537"
+         endingLineNumber = "537"
          landmarkName = "-getMachinesForGym:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/DatabaseManager.m"
-         timestampString = "366044813.089113"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "417"
-         endingLineNumber = "417"
+         startingLineNumber = "503"
+         endingLineNumber = "503"
          landmarkName = "-getMachinesForGym:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -124,38 +124,12 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367432605.331414"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367432605.331414"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "142"
-         endingLineNumber = "142"
-         landmarkName = "-loadMachine:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "MultiSpa/PickGymViewController.m"
-         timestampString = "368726854.801507"
+         timestampString = "370892623.773795"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "33"
-         endingLineNumber = "33"
+         startingLineNumber = "39"
+         endingLineNumber = "39"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,37 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/PickGymViewController.m"
-         timestampString = "368726854.801507"
+         timestampString = "370969882.206499"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MultiSpa/PickGymViewController.m"
-         timestampString = "368726854.801507"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MultiSpa/PickGymViewController.m"
-         timestampString = "368726854.801507"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -202,13 +150,26 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "MultiSpa/PickGymViewController.m"
-         timestampString = "368726854.801507"
+         filePath = "MultiSpa/DatabaseManager.m"
+         timestampString = "368752893.981928"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "303"
+         endingLineNumber = "303"
+         landmarkName = "-setShare:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MultiSpa/JSONparser.m"
+         timestampString = "370969249.007343"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "74"
+         endingLineNumber = "74"
+         landmarkName = "-getGymId:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -216,24 +177,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367432907.400926"
+         timestampString = "370987839.689159"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
-         landmarkName = "-embedYouTube"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367432923.100058"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "138"
-         endingLineNumber = "138"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-loadMachine:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -241,26 +189,52 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367433566.839499"
+         filePath = "MultiSpa/JSONparser.m"
+         timestampString = "370969249.007343"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "130"
-         endingLineNumber = "130"
-         landmarkName = "-embedYouTube"
+         startingLineNumber = "99"
+         endingLineNumber = "99"
+         landmarkName = "-getWeekClassesFromGym:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "MultiSpa/MaquinasViewController.m"
-         timestampString = "367433574.714434"
+         filePath = "MultiSpa/JSONparser.m"
+         timestampString = "370969249.007343"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "117"
-         endingLineNumber = "117"
-         landmarkName = "-embedYouTube"
+         startingLineNumber = "101"
+         endingLineNumber = "101"
+         landmarkName = "-getWeekClassesFromGym:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MultiSpa/JSONparser.m"
+         timestampString = "370969381.294369"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
+         landmarkName = "-getMachinesForGym:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MultiSpa/ClassesViewController.m"
+         timestampString = "370971888.153708"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "317"
+         endingLineNumber = "317"
+         landmarkName = "-easyTableView:setDataForView:forIndex:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
